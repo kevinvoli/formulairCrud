@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulair</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="contener">
+        <div class="contener-form">
+            <form action="/modifie" method="POST">
+                <h1>inscription</h1>
+                <div class="input-form">
+                    <label for="name:"  >nom</label>
+                    <p>
+                        <input type="text" placeholder="<%= user.user.name%>" value="<%= user.user.name%>" name="name">
+                    </p>
+                </div>
+                <div class="input-form">
+                    <label for="lastname">prenom</label>
+                    <p>
+                        <input type="text" name="lastname" id="" placeholder="<%= user.user.lastName%>"  value="<%= user.user.lastName%>">
+
+                    </p>
+                </div>
+                <div class="input-form">
+                    <label for="email">email</label>
+                    <p>
+                        <input type="email" name="email" id="" placeholder="<%= user.user.email%>" value="<%= user.user.email%>">
+
+                    </p>
+                </div>
+                <div class="input-form">
+                    <label for="number">numero</label>
+                    <p>
+                    <input type="number" name="number" placeholder="<%= user.user.numero%>" value="<%= user.user.numero%>" id="">
+                    </p>
+                </div>
+                <input type="hidden" name="id" value="<%= user.user.id%>">
+                <div class="input-form">
+                    <input class="button" type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>

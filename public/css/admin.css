@@ -1,0 +1,22 @@
+body{
+    margin: Opx;
+    padding: 0px;
+}
+p{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: solid black 2px;
+}
+.email{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    border: solid black 2px;   
+}
+.suprime{
+    background-color: red;
+}
+.modifie{
+    background-color: green;
+}

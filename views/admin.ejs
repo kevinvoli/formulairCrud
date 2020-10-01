@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>administration</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <div class="contener">
+        <h4>liste des utilusateur</h4>
+        <div>
+            <% user.forEach(function(user){%>
+                <div>
+                        <p>nom:<%= user.name%> </p>
+                        <p>prenom: <%= user.lastName%></p>
+                        <p class="email">email:<%= user.email%></p>
+                        <p>numero: <%= user.numero%></p>
+                        <p class="modifie"><a href="/modifie/<%= user.id%>">modifie</a> </p>
+                        <p class="suprime"><a href="/admin/<%= user.id%>">suprime</a></p>
+                </div>
+            <%})%>
+        </div>
+    </div>
+</body>
+</html>
